@@ -1,0 +1,313 @@
+*{
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+}
+
+body{
+   background-color: whitesmoke;
+}
+
+header{
+   display: flex;
+   justify-content: space-around;
+   background-color: coral;
+   background-size: auto;
+   color:black;
+   align-items: center;
+   padding: 10px;
+   position: sticky;
+   top: 0%;
+   
+}
+@media(max-width:576px){
+   header{
+      flex-direction: column;
+   }
+}
+.logo{
+   display: flex;
+align-items: center;
+padding: 5px;
+}
+.logo h1{
+   align-items: center;
+   padding: 5px;
+   
+}
+header .logo img{
+   height: 80px;
+   width: 80px;
+}
+.menu-navegacion{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+
+.menu-navegacion a{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 5px;
+   margin: auto;
+   color:black;
+   text-decoration: none;
+   font-size: 20px;
+}
+
+
+.menu-navegacion a:hover{
+   color:white;
+}
+
+
+   
+
+
+#main .imagen img{
+   margin: 20px 0px 0px 0px;
+   width: 100%;
+   height: 250px;
+ 
+}
+#main .cajas div{
+   background-color: paleturquoise;
+   border: 2px solid rgb(77, 215, 215);
+   height: 300px;
+   width: 300px;
+   display: flex;
+   flex-direction: column;
+   margin: 65px;
+   justify-content: space-around;
+   
+   
+}
+
+#main .cajas{
+   display: flex;
+   flex-wrap: wrap;
+   width: 100%;
+   margin: auto;
+   justify-content: space-around;
+   
+}
+
+#main section div h1{
+   font-size:30px;
+}
+#main section div .btn{
+   align-self: flex-end;
+   color: rgb(0, 0, 0);
+   justify-self: flex-end;
+   border-radius: 5px;
+   background-color:white;
+   text-decoration: none;
+
+}
+.btn a{
+   text-decoration: none;
+   color: black;
+}
+.btn a:hover{
+   color: blue;
+}
+
+#main .galeria{
+   display: flex;
+   flex-wrap: wrap;
+   flex-flow: row;
+   margin: auto;
+   justify-content: space-around;
+   align-content: space-between;
+   width: 500px;
+   height: 500px;
+   
+}
+
+#main .galeria img{
+   height: 400px;
+   width: 250px;
+   display: flex;
+   flex-direction: column;
+   margin: 20px;
+   justify-content: space-between;
+}
+
+footer .informacion{
+   display:flex ;
+   justify-content: space-around;
+   padding: 10px 30px 10px 30px ;
+   margin: 30px 40px;
+   border: 20px 50px;
+}
+
+footer .informacion h2{
+   padding: 5px 35px 5px 70px ;
+   margin: 20px 70px 20px 65px;
+   border: solid black;
+   display: flex;
+   justify-content: space-around;
+   
+
+}
+footer.informacion h2 p {
+   text-align: center ;
+
+}
+
+footer .iconos{
+   display:flex ;
+   justify-content: space-around;
+   margin: 20px 0px;
+}
+ footer .iconos a img{
+   width: 50px;
+   height: 50px;
+
+ }
+ 
+ .grupos-pequeños{
+   background-color: rgb(179, 246, 246);
+   margin: 15px 950px 0px 5px;
+   
+   }
+    
+   
+    div h2{
+       margin-top: 15px;
+       margin-bottom: 15px;
+       margin-left: 5px;
+       border: solid black;
+       
+    }
+    div .cajas-grupos{
+       display: flex;
+       flex-direction: column;
+   
+    }
+   .info-grupos{
+       display: flex;
+       align-items: center;
+       
+    }
+    .info-grupos p{
+       align-content: space-between;
+       
+    }
+    .info-grupos img{
+       background-color: wheat; 
+       margin: 10px 10px 10px 5px;
+       width: 200px;
+       height: 200px;
+    }
+    
+   
+   
+    .nuestros-mensajes{
+      background-color: rgb(179, 246, 246);
+      margin: 15px 950px 0px 5px;
+    }   
+   
+   
+    div a {
+       display: flex;
+      justify-content: flex-end;
+      margin-top: 20px;
+      margin-bottom: 15px
+   }
+   
+   
+    .caja-mensajes{
+      display: flex;
+      flex-direction: row;
+    }
+   .videos{
+         margin: 5px;
+         
+     }
+   
+     .ministerios{
+       background-color: rgb(179, 246, 246);
+       margin: 15px 950px 0px 5px;
+    } 
+   
+    .caja-ministerios{
+      display: flex;
+      flex-direction: row; 
+     justify-content: space-between;
+   
+    }
+    .caja-ministerios img{ 
+      display: flex;
+      
+      width: 100%;
+      height: 350px;
+    }
+    .fotos-ministerios img{
+      padding: 5px;
+    }
+    
+    .info-ministerios {
+      display: flex;
+    }
+   
+    .info-ministerios p{
+      margin: 20px;
+      text-align: justify;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+   .nosotros{
+     background-color: rgb(179, 246, 246);
+     margin: 15px 950px 0px 5px;
+   }
+   .info-nosotros p{
+     margin: 20px;
+     text-align: justify;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   }
+   .caja-nosotros{
+     display: flex;
+      flex-direction: row; 
+     justify-content: space-between;
+   }
+   .caja-nosotros img{ 
+     display: flex;
+     
+     width: 100%;
+     height: 350px;
+   }
+   .fotos-nosotros img{
+     padding: 5px;
+   }
+   
+   .informacion-iglesia{
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-around;
+     align-content: center;
+     padding: 15px;
+   }
+   .mapa img{
+   height: 355px;
+   width: 500px;
+   padding: 10px;
+   }
+   
+   .form-igl form{
+    border: solid black;
+     display: block;
+     padding: 10px;
+   }
+   .form-igl p{
+     padding: 10px;
+   }
+.volver a{
+   text-decoration: none;
+   color: black;
+}   
+.volver a:hover{
+   color: blue;
+}
