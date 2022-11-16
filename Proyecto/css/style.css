@@ -23,6 +23,7 @@ header{
 @media(max-width:576px){
    header{
       flex-direction: column;
+      max-width: 100%;
    }
 }
 .logo{
@@ -121,19 +122,34 @@ header .logo img{
    margin: auto;
    justify-content: space-around;
    align-content: space-between;
-   width: 500px;
+   width: auto;
    height: 500px;
-   
+ 
 }
+
+
 
 #main .galeria img{
    height: 400px;
-   width: 250px;
+   width: 20%;
    display: flex;
    flex-direction: column;
    margin: 20px;
    justify-content: space-between;
 }
+@media(max-width:720px){
+   #main .galeria{
+      flex-direction:column ;
+      height: auto;
+      width: auto;
+      justify-content: center;
+      align-items: center;
+         }
+   #main .galeria img{
+      width: 50%;
+   }
+}
+
 
 footer .informacion{
    display:flex ;
@@ -142,16 +158,32 @@ footer .informacion{
    margin: 30px 40px;
    border: 20px 50px;
 }
+@media(max-width:720px){
+  footer .informacion{
+      flex-direction:column ;
+      padding: 0%;
+      margin: 0%;
+      text-align: center;
+   }
+   footer .informacion h2{
+      padding: 0% ;
+      margin: 0%;
+     
+   }
+}
 
 footer .informacion h2{
-   padding: 5px 35px 5px 70px ;
    margin: 20px 70px 20px 65px;
    border: solid black;
    display: flex;
    justify-content: space-around;
-   
+   text-align: center;
 
 }
+
+ 
+
+
 footer.informacion h2 p {
    text-align: center ;
 
@@ -192,6 +224,7 @@ footer .iconos{
        align-items: center;
        
     }
+   
     .info-grupos p{
        align-content: space-between;
        
@@ -202,7 +235,19 @@ footer .iconos{
        width: 200px;
        height: 200px;
     }
-    
+    @media (max-width: 720px) {
+      .info-grupos{
+         flex-direction: column;
+         justify-content: center;
+      }
+      .info-grupos p{
+         align-items: center;
+         max-width: 50%;
+    }
+    .info-grupos img{
+      width: 50% ;
+    }
+    }
    
    
     .nuestros-mensajes{
@@ -222,7 +267,15 @@ footer .iconos{
     .caja-mensajes{
       display: flex;
       flex-direction: row;
+      
+      
     }
+    @media (max-width:720px) {
+      .caja-mensajes{
+         overflow: scroll;
+      }
+    }
+    
    .videos{
          margin: 5px;
          
@@ -247,6 +300,19 @@ footer .iconos{
     }
     .fotos-ministerios img{
       padding: 5px;
+      margin: auto;
+    }
+    @media (max-width: 720px){
+      .caja-ministerios {
+         flex-direction: column;
+         justify-content: center;
+         align-items:center;
+      }
+      .fotos-ministerios img{
+         width: 100%;
+         
+         
+      }
     }
     
     .info-ministerios {
@@ -274,13 +340,25 @@ footer .iconos{
    }
    .caja-nosotros img{ 
      display: flex;
-     
      width: 100%;
      height: 350px;
    }
    .fotos-nosotros img{
      padding: 5px;
    }
+
+   @media (max-width: 720px){
+      .caja-nosotros {
+         flex-direction: column;
+         justify-content: center;
+         align-items:center;
+      }
+      .fotos-nosotros img{
+         width: 100%;
+         
+         
+      }
+    }
    
    .informacion-iglesia{
      display: flex;
@@ -300,6 +378,12 @@ footer .iconos{
     border: solid black;
      display: block;
      padding: 10px;
+   }
+
+   @media (max-width: 720px){
+      .informacion-iglesia{
+         flex-direction: column;
+      }
    }
    .form-igl p{
      padding: 10px;
