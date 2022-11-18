@@ -4,14 +4,11 @@
    margin: 0;
 }
 
-body{
-   background-color: whitesmoke;
-}
 
 header{
    display: flex;
    justify-content: space-around;
-   background-color: coral;
+   background: linear-gradient( to right ,rgb(248, 55, 21),rgb(253, 133, 111) ) ;
    background-size: auto;
    color:black;
    align-items: center;
@@ -74,7 +71,7 @@ header .logo img{
  
 }
 #main .cajas div{
-   background-color: paleturquoise;
+   background-color: rgba(175, 238, 238, 0.466);
    border: 2px solid rgb(77, 215, 215);
    height: 300px;
    width: 300px;
@@ -82,6 +79,7 @@ header .logo img{
    flex-direction: column;
    margin: 65px;
    justify-content: space-around;
+   text-align: center;
    
    
 }
@@ -98,6 +96,7 @@ header .logo img{
 #main section div h1{
    font-size:30px;
 }
+
 #main section div .btn{
    align-self: flex-end;
    color: rgb(0, 0, 0);
@@ -105,7 +104,7 @@ header .logo img{
    border-radius: 5px;
    background-color:white;
    text-decoration: none;
-
+   padding: 2px;
 }
 .btn a{
    text-decoration: none;
@@ -170,6 +169,9 @@ footer .informacion{
       margin: 0%;
      
    }
+   footer .informacion h2:hover{
+      color: red;
+   }
 }
 
 footer .informacion h2{
@@ -181,13 +183,6 @@ footer .informacion h2{
 
 }
 
- 
-
-
-footer.informacion h2 p {
-   text-align: center ;
-
-}
 
 footer .iconos{
    display:flex ;
