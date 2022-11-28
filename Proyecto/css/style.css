@@ -65,10 +65,6 @@ header .logo img{
    color:red;
 }
 
-
-   
-
-
 #main .imagen img{
    margin: 20px 0px 0px 0px;
    width: 100%;
@@ -76,9 +72,6 @@ header .logo img{
  
 }
 
-#main .cajas{
-   background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(216,216,216,1) 50%, rgba(255,255,255,0.9336776947106968) 100%);
-}
 #main .cajas div{
    
    height: 300px;
