@@ -1,79 +1,85 @@
-*{
+* {
    box-sizing: border-box;
    padding: 0;
    margin: 0;
 }
 
 
-header{
+header {
    display: flex;
    justify-content: space-between;
    background-image: url(../Multimedios/NLC-2020-Tue-Evening-97-1280x705.jpg);
    background-size: auto;
-   color:white;
+   color: white;
    align-items: center;
-  border-bottom: 1px solid black;
+   border-bottom: 1px solid black;
    padding: 50px;
    position: sticky;
    top: 0%;
-   
-}
-@media(max-width:576px){
-   header{
-      flex-direction: column;
-      max-width: 100%;
-   }
-}
-.logo{
-   display: flex;
-align-items: center;
-justify-content: start;
-padding: 5px;
 
 }
-.logo h1{
+
+@media(max-width:576px) {
+   header {
+      flex-direction: column;
+      max-width: 100%;
+      padding: 1px;
+   }
+}
+
+.logo {
+   display: flex;
+   align-items: center;
+   justify-content: start;
+   padding: 5px;
+
+}
+
+.logo h1 {
    align-items: center;
    padding: 5px;
-   
+
 }
-header .logo img{
+
+header .logo img {
    height: 80px;
    width: 80px;
    border: solid white;
    border-radius: 10px;
 }
-.menu-navegacion{
+
+.menu-navegacion {
    display: flex;
    justify-content: space-between;
    align-items: center;
 }
 
 
-.menu-navegacion a{
+.menu-navegacion a {
    display: flex;
    align-items: center;
    justify-content: space-between;
    padding: 5px;
    margin: auto;
-   color:white;
+   color: white;
    text-decoration: none;
    font-size: 20px;
 }
 
 
-.menu-navegacion a:hover{
-   color:red;
+.menu-navegacion a:hover {
+   color: rgb(160, 239, 251);
 }
 
-#main .imagen img{
+#main .imagen img {
    margin: 20px 0px 0px 0px;
    width: 100%;
    height: 250px;
- 
+
 }
 
-#main .cajas div{
-   
+#main .cajas div {
+
    height: 300px;
    width: 300px;
    display: flex;
@@ -81,43 +87,51 @@ header .logo img{
    margin: 65px;
    justify-content: space-around;
    text-align: center;
-   
-   
+
+
 }
 
-#main .cajas{
+#main .cajas {
    display: flex;
    flex-wrap: wrap;
    width: 100%;
    margin: auto;
    justify-content: space-around;
-   background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(216,216,216,1) 50%, rgba(255,255,255,0.9336776947106968) 100%);
-   
+   background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(216, 216, 216, 1) 50%, rgba(255, 255, 255, 0.9336776947106968) 100%);
+
 }
 
-#main section div h1{
-   font-size:30px;
+#main section div h1 {
+   font-size: 30px;
+   font-family: sans-serif;
+   color: #090979;
+}
+
+#main section div p {
+   font-size: 20px;
    font-family: sans-serif;
 }
 
-#main section div .btn{
-   align-self: flex-end;
+#main section div .btn {
+   align-self: center;
    border-color: transparent;
    justify-self: flex-end;
    border-radius: 5px;
-   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(42,122,132,1) 100%);
+   background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, #090979 35%, rgba(42, 122, 132, 1) 100%);
    text-decoration: none;
    padding: 2px;
 }
-.btn a{
+
+.btn a {
    text-decoration: none;
    color: white;
 }
-.btn a:hover{
+
+.btn a:hover {
    color: rgba(205, 205, 205, 0.979);
 }
 
-#main .galeria{
+#main .galeria {
    display: flex;
    flex-wrap: wrap;
    flex-flow: row;
@@ -126,12 +140,12 @@ header .logo img{
    align-content: space-between;
    width: auto;
    height: 500px;
- 
+
 }
 
 
 
-#main .galeria img{
+#main .galeria img {
    height: 400px;
    width: 20%;
    display: flex;
@@ -139,256 +153,298 @@ header .logo img{
    margin: 20px;
    justify-content: space-between;
 }
-@media(max-width:720px){
-   #main .galeria{
-      flex-direction:column ;
+
+@media(max-width:720px) {
+   #main .galeria {
+      flex-direction: column;
       height: auto;
       width: auto;
       justify-content: center;
       align-items: center;
-         }
-   #main .galeria img{
+   }
+
+   #main .galeria img {
+      width: 50%;
+   }
+}
+
+footer {
+   background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(42, 122, 132, 1) 100%);
+}
+
+footer .informacion {
+   display: flex;
+   justify-content: space-around;
+   padding: 10px 30px 10px 30px;
+   margin: 30px 40px;
+   border: 20px 50px;
+}
+
+@media(max-width:720px) {
+   footer .informacion {
+      flex-direction: column;
+      padding: 0%;
+      margin: 0%;
+      text-align: center;
+   }
+
+   footer .informacion h2 {
+      padding: 0%;
+      margin: 0%;
+
+   }
+
+   footer .informacion h2:hover {
+      color: red;
+   }
+}
+
+footer .informacion h2 {
+   margin: 20px 70px 20px 65px;
+   border: solid white;
+   border-radius: 10px;
+   display: flex;
+   justify-content: space-around;
+   text-align: center;
+   color: white;
+}
+
+footer .informacion p{
+   color: white;
+   font-family: sans-serif;
+   padding: 2px;
+}
+
+footer .iconos {
+   display: flex;
+   justify-content: space-around;
+   margin: 20px 0px;
+}
+
+footer .iconos a img {
+   width: 50px;
+   height: 50px;
+
+}
+
+.grupos-pequeños {
+   margin: 15px 950px 0px 5px;
+
+}
+
+
+div h2 {
+   margin-top: 15px;
+   margin-bottom: 15px;
+   margin-left: 5px;
+   border: solid black;
+   border-radius: 5px;
+   font-family: sans-serif;
+   padding-left: 5px;
+
+}
+@media(max-width:720px) {
+      div h2 {
+         display: flex;
+         justify-content: center;
+      }
+   }
+
+
+
+
+div .cajas-grupos {
+   display: flex;
+   flex-direction: column;
+
+}
+
+.info-grupos {
+   display: flex;
+   align-items: center;
+
+}
+
+.info-grupos p {
+   align-content: space-between;
+
+}
+
+.info-grupos img {
+   background-color: wheat;
+   margin: 10px 10px 10px 5px;
+   width: 200px;
+   height: 200px;
+}
+
+@media (max-width: 720px) {
+   .info-grupos {
+      flex-direction: column;
+      justify-content: center;
+   }
+
+   .info-grupos p {
+      align-items: center;
+      max-width: 50%;
+   }
+
+   .info-grupos img {
       width: 50%;
    }
 }
 
 
-footer .informacion{
-   display:flex ;
-   justify-content: space-around;
-   padding: 10px 30px 10px 30px ;
-   margin: 30px 40px;
-   border: 20px 50px;
-}
-@media(max-width:720px){
-  footer .informacion{
-      flex-direction:column ;
-      padding: 0%;
-      margin: 0%;
-      text-align: center;
-   }
-   footer .informacion h2{
-      padding: 0% ;
-      margin: 0%;
-     
-   }
-   footer .informacion h2:hover{
-      color: red;
-   }
-}
-
-footer .informacion h2{
-   margin: 20px 70px 20px 65px;
-   border: solid black;
-   display: flex;
-   justify-content: space-around;
-   text-align: center;
-   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(42,122,132,1) 100%);
-
-color: white;
-}
-
-
-footer .iconos{
-   display:flex ;
-   justify-content: space-around;
-   margin: 20px 0px;
-}
- footer .iconos a img{
-   width: 50px;
-   height: 50px;
-
- }
- 
- .grupos-pequeños{
+.nuestros-mensajes {
    margin: 15px 950px 0px 5px;
-   
+}
+
+
+div a {
+   display: flex;
+   justify-content: flex-end;
+   padding: 1px 43px;
+   margin: 2px;
+}
+
+
+.caja-mensajes {
+   display: flex;
+   flex-direction: row;
+
+
+}
+
+@media (max-width:720px) {
+   .caja-mensajes {
+      overflow: scroll;
    }
-    
-   
-    div h2{
-       margin-top: 15px;
-       margin-bottom: 15px;
-       margin-left: 5px;
-       border: solid black;
-       
-    }
-    div .cajas-grupos{
-       display: flex;
-       flex-direction: column;
-   
-    }
-   .info-grupos{
-       display: flex;
-       align-items: center;
-       
-    }
-   
-    .info-grupos p{
-       align-content: space-between;
-       
-    }
-    .info-grupos img{
-       background-color: wheat; 
-       margin: 10px 10px 10px 5px;
-       width: 200px;
-       height: 200px;
-    }
-    @media (max-width: 720px) {
-      .info-grupos{
-         flex-direction: column;
-         justify-content: center;
-      }
-      .info-grupos p{
-         align-items: center;
-         max-width: 50%;
-    }
-    .info-grupos img{
-      width: 50% ;
-    }
-    }
-   
-   
-    .nuestros-mensajes{
-      margin: 15px 950px 0px 5px;
-    }   
-   
-   
-    div a {
-      display: flex;
-      justify-content: flex-end;
-      padding: 1px 43px;
-      margin: 2px;
+}
+
+.videos {
+   margin: 5px;
+
+}
+
+.ministerios {
+   margin: 15px 950px 0px 5px;
+}
+
+.caja-ministerios {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+
+}
+
+.caja-ministerios img {
+   display: flex;
+
+   width: 100%;
+   height: 350px;
+}
+
+.fotos-ministerios img {
+   padding: 5px;
+   margin: auto;
+}
+
+@media (max-width: 720px) {
+   .caja-ministerios {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
    }
-   
-   
-    .caja-mensajes{
-      display: flex;
-      flex-direction: row;
-      
-      
-    }
-    @media (max-width:720px) {
-      .caja-mensajes{
-         overflow: scroll;
-      }
-    }
-    
-   .videos{
-         margin: 5px;
-         
-     }
-   
-     .ministerios{
-       margin: 15px 950px 0px 5px;
-    } 
-   
-    .caja-ministerios{
-      display: flex;
-      flex-direction: row; 
-     justify-content: space-between;
-   
-    }
-    .caja-ministerios img{ 
-      display: flex;
-      
+
+   .fotos-ministerios img {
       width: 100%;
-      height: 350px;
-    }
-    .fotos-ministerios img{
-      padding: 5px;
-      margin: auto;
-    }
-    @media (max-width: 720px){
-      .caja-ministerios {
-         flex-direction: column;
-         justify-content: center;
-         align-items:center;
-      }
-      .fotos-ministerios img{
-         width: 100%;
-         
-         
-      }
-    }
-    
-    .info-ministerios {
-      display: flex;
-    }
-   
-    .info-ministerios p{
-      margin: 20px;
-      text-align: justify;
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
-   .nosotros{
-     
-     margin: 15px 950px 0px 5px;
+
+
    }
-   .info-nosotros p{
-     margin: 20px;
-     text-align: justify;
-     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-   }
-   .caja-nosotros{
-     display: flex;
-      flex-direction: row; 
-     justify-content: space-between;
-   }
-   .caja-nosotros img{ 
-     display: flex;
-     width: 100%;
-     height: 350px;
-   }
-   .fotos-nosotros img{
-     padding: 5px;
+}
+
+.info-ministerios {
+   display: flex;
+}
+
+.info-ministerios p {
+   margin: 20px;
+   text-align: justify;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.nosotros {
+
+   margin: 15px 950px 0px 5px;
+}
+
+.info-nosotros p {
+   margin: 20px;
+   text-align: justify;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.caja-nosotros {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+.caja-nosotros img {
+   display: flex;
+   width: 100%;
+   height: 350px;
+}
+
+.fotos-nosotros img {
+   padding: 5px;
+}
+
+@media (max-width: 720px) {
+   .caja-nosotros {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
    }
 
-   @media (max-width: 720px){
-      .caja-nosotros {
-         flex-direction: column;
-         justify-content: center;
-         align-items:center;
-      }
-      .fotos-nosotros img{
-         width: 100%;
-         
-         
-      }
-    }
-   
-   .informacion-iglesia{
-     display: flex;
-     flex-direction: row;
-     align-items: center;
-     justify-content: space-around;
-     align-content: center;
-     padding: 15px;
+   .fotos-nosotros img {
+      width: 100%;
+
+
    }
-   .mapa img{
-   height: 355px;
-   width: 500px;
+}
+
+.informacion-iglesia {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-around;
+   align-content: center;
+   padding: 15px;
+}
+
+.form-igl form {
+   border: solid black;
+   background-color: rgba(241, 241, 241, 0.514);
+   border-radius: 5px;
+   display: block;
    padding: 10px;
-   }
-   
-   .form-igl form{
-    border: solid black;
-     display: block;
-     padding: 10px;
-   }
+}
 
-   @media (max-width: 720px){
-      .informacion-iglesia{
-         flex-direction: column;
-      }
+@media (max-width: 720px) {
+   .informacion-iglesia {
+      flex-direction: column;
    }
-   .form-igl p{
-     padding: 10px;
-   }
-.volver a{
+}
+
+.form-igl p {
+   padding: 10px;
+}
+
+.volver a {
    text-decoration: none;
    color: black;
-}   
-.volver a:hover{
+}
+
+.volver a:hover {
    color: blue;
 }
