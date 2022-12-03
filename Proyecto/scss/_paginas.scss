@@ -9,10 +9,10 @@ div {
         margin-left: 5px;
         border: solid black;
         border-radius: 5px;
-        font-family:$fontPrincipal;
+        font-family:$fuentePrincipal;
         padding-left: 5px;
     }
-    @media(max-width:$mobile) {
+    @media(max-width:$wCelular) {
         div h2 {
            display: flex;
            justify-content: center;
@@ -46,7 +46,7 @@ div {
     }
 
 }
-@media (max-width:$mobile) {
+@media (max-width:$wCelular) {
     .info-grupos {
        flex-direction: column;
        justify-content: center;
@@ -80,7 +80,7 @@ div {
         display: flex;
         flex-direction: row;
     }
-    @media (max-width:$mobile) {
+    @media (max-width:$wCelular) {
         .caja-mensajes {
            overflow: scroll;
         }
@@ -111,7 +111,7 @@ div{
             margin: auto;
         }
     }
-    @media (max-width:$mobile) {
+    @media (max-width:$wCelular) {
         .caja-ministerios {
            flex-direction: column;
            justify-content: center;
@@ -129,7 +129,7 @@ div{
         p{
             margin: 20px;
             text-align: justify;
-            font-family:$fontPrincipal;
+            font-family:$fuentePrincipal;
             font-size: 15;
         }
     }
@@ -158,7 +158,7 @@ div{
     }
     
 
- @media (max-width: $mobile) {
+ @media (max-width: $wCelular) {
     .caja-nosotros {
        flex-direction: column;
        justify-content: center;
@@ -206,7 +206,7 @@ div{
             }
         }
     }
-    @media (max-width: $mobile) {
+    @media (max-width: $wCelular) {
         .informacion-iglesia {
            flex-direction: column;
         }
@@ -214,3 +214,29 @@ div{
            margin: 10px;
         }
      }
+
+
+     //mixins
+@mixin btn {
+    margin: $marginMixins;
+}
+
+.nuestros-mensajes{
+    @include btn;
+    
+}
+
+.grupos-pequeños{
+    @include btn;
+  
+}
+
+.ministerios {
+    @include btn;
+    
+
+}
+
+.nosotros{
+    @include btn;
+}

@@ -1,36 +1,14 @@
+
 //variables
 
 $colorFondo: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(42, 122, 132, 1) 100%);
-$fontPrincipal: sans-serif ;
-$colorBasic: white;
 $colorBase:black;
+$fuentePrincipal: sans-serif ;
+
+
 $marginMixins: 15px 950px 0px 5px;
-$mobile:720px;
-$medImg:100%;
+$wCelular:720px;
 
-//mixins
-@mixin btn {
-    margin: $marginMixins;
-}
-
-.nuestros-mensajes{
-    @include btn;
-    
-}
-
-.grupos-pequeños{
-    @include btn;
-  
-}
-
-.ministerios {
-    @include btn;
-    
-
-}
-
-.nosotros{
-    @include btn;
-}
+$medidaImg:100%;
 
 

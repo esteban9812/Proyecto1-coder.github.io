@@ -5,6 +5,10 @@
   margin: 0;
 }
 
+body {
+  overflow-y: scroll;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -14,6 +18,7 @@ header {
   align-items: center;
   border-bottom: 1px solid black;
   padding: 50px;
+  position: -webkit-sticky;
   position: sticky;
   top: 0%;
 }
@@ -52,7 +57,7 @@ header .menu-navegacion a:hover {
   color: rgb(160, 239, 251);
 }
 
-@media (max-width: 576px) {
+@media (max-width: 720px) {
   header {
     flex-direction: column;
     max-width: 100%;
@@ -95,7 +100,7 @@ header .menu-navegacion a:hover {
   border-color: transparent;
   justify-self: flex-end;
   border-radius: 5px;
-  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, #090979 35%, rgb(42, 122, 132) 100%);
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(9, 9, 121) 35%, rgb(42, 122, 132) 100%);
   text-decoration: none;
   padding: 2px;
 }
@@ -190,22 +195,6 @@ footer .iconos a img {
     color: red;
   }
 }
-.nuestros-mensajes {
-  margin: 15px 950px 0px 5px;
-}
-
-.grupos-pequeños {
-  margin: 15px 950px 0px 5px;
-}
-
-.ministerios {
-  margin: 15px 950px 0px 5px;
-}
-
-.nosotros {
-  margin: 15px 950px 0px 5px;
-}
-
 div h2 {
   margin-top: 15px;
   margin-bottom: 15px;
@@ -240,21 +229,21 @@ div .info-grupos img {
   width: 200px;
   height: 200px;
 }
+
 @media (max-width: 720px) {
-  div  .info-grupos {
+  .info-grupos {
     flex-direction: column;
     justify-content: center;
   }
-  div  .info-grupos p {
+  .info-grupos p {
     align-items: center;
     max-width: 50%;
     margin: auto;
   }
-  div  .info-grupos img {
+  .info-grupos img {
     width: 50%;
   }
 }
-
 div a {
   display: flex;
   justify-content: flex-end;
@@ -368,4 +357,19 @@ div .fotos-nosotros img {
   .form-igl form {
     margin: 10px;
   }
+}
+.nuestros-mensajes {
+  margin: 15px 950px 0px 5px;
+}
+
+.grupos-pequeños {
+  margin: 15px 950px 0px 5px;
+}
+
+.ministerios {
+  margin: 15px 950px 0px 5px;
+}
+
+.nosotros {
+  margin: 15px 950px 0px 5px;
 }/*# sourceMappingURL=main.css.map */
