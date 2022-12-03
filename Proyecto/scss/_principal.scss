@@ -9,12 +9,13 @@ header {
     justify-content: space-between;
     background-image: url(../Multimedios/NLC-2020-Tue-Evening-97-1280x705.jpg);
     background-size: auto;
-    color: white;
+    color:$colorBasic;
     align-items: center;
     border-bottom: 1px solid black;
     padding: 50px;
     position: sticky;
     top: 0%;
+   
 
     .logo {
         display: flex;
@@ -31,7 +32,7 @@ header {
         img {
             height: 80px;
             width: 80px;
-            border: solid white;
+            border: solid $colorBasic;
             border-radius: 10px;
         }
     }
@@ -47,7 +48,7 @@ header {
             justify-content: space-between;
             padding: 5px;
             margin: auto;
-            color: white;
+            color: $colorBasic;
             text-decoration: none;
             font-size: 20px;
 
@@ -59,10 +60,10 @@ header {
     }
   
 }
-@media(max-width:576px) {
+@media(max-width:$mobile) {
     header {
        flex-direction: column;
-       max-width: 100%;
+       max-width: $medImg;
        padding: 1px;
     }
  }
@@ -72,7 +73,7 @@ header {
     .imagen {
         img {
             margin: 20px 0px 0px 0px;
-            width: 100%;
+            width:$medImg;
             height: 250px;
         }
     }
@@ -83,7 +84,7 @@ header {
     .cajas {
         display: flex;
         flex-wrap: wrap;
-        width: 100%;
+        width: $medImg;
         margin: auto;
         justify-content: space-around;
         background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(216, 216, 216, 1) 50%, rgba(255, 255, 255, 0.9336776947106968) 100%);
@@ -99,13 +100,13 @@ header {
 
             h1 {
                 font-size: 30px;
-                font-family: sans-serif;
+                font-family:$fontPrincipal;
                 color: #090979;
             }
 
             p {
                 font-size: 20px;
-                font-family: sans-serif;
+                font-family:$fontPrincipal;
             }
 
             .btn {
@@ -119,7 +120,7 @@ header {
 
                 a {
                     text-decoration: none;
-                    color: white;
+                    color: $colorBasic;
 
                     &:hover {
                         color: rgba(205, 205, 205, 0.979);
@@ -151,7 +152,7 @@ header {
         }
     }
 }
-@media(max-width:720px) {
+@media(max-width: $mobile) {
     #main .galeria {
        flex-direction: column;
        height: auto;
@@ -166,7 +167,7 @@ header {
  }
 
 footer {
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(42, 122, 132, 1) 100%);
+    background: $colorFondo;
 
     .informacion {
         display: flex;
@@ -184,12 +185,12 @@ footer {
             display: flex;
             justify-content: space-around;
             text-align: center;
-            color: white;
+            color: $colorBasic;
             padding: 0px 20px 0px 20px;
         }
 
         p {
-            color: white;
+            color: $colorBasic;
             font-family: sans-serif;
             padding: 5px 0px;
             text-align: center;
@@ -211,7 +212,7 @@ footer {
         }
     }
 }
-  @media(max-width:720px) {
+  @media(max-width: $mobile) {
             footer .informacion {
                flex-direction: column;
                padding: 0%;

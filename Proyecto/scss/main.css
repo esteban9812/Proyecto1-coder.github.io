@@ -242,16 +242,16 @@ div .info-grupos img {
   height: 200px;
 }
 @media (max-width: 720px) {
-  div .info-grupos .info-grupos {
+  div  .info-grupos {
     flex-direction: column;
     justify-content: center;
   }
-  div .info-grupos .info-grupos p {
+  div  .info-grupos p {
     align-items: center;
     max-width: 50%;
     margin: auto;
   }
-  div .info-grupos .info-grupos img {
+  div  .info-grupos img {
     width: 50%;
   }
 }

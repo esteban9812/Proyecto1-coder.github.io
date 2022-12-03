@@ -1,19 +1,16 @@
 //variables
 
 $colorFondo: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(42, 122, 132, 1) 100%);
-
-
-
-
-
-
-
-
-
+$fontPrincipal: sans-serif ;
+$colorBasic: white;
+$colorBase:black;
+$marginMixins: 15px 950px 0px 5px;
+$mobile:720px;
+$medImg:100%;
 
 //mixins
 @mixin btn {
-    margin: 15px 950px 0px 5px;
+    margin: $marginMixins;
 }
 
 .nuestros-mensajes{
