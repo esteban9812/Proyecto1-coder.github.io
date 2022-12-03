@@ -1,0 +1,214 @@
+// grupos pequeños
+div {
+
+  
+
+    h2 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        margin-left: 5px;
+        border: solid black;
+        border-radius: 5px;
+        font-family: sans-serif;
+        padding-left: 5px;
+    }
+    @media(max-width:720px) {
+        div h2 {
+           display: flex;
+           justify-content: center;
+        }
+     }
+
+    .cajas-grupos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info-grupos {
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+
+        p {
+            align-content: space-between;
+            margin: 50px;
+        }
+      
+        img {
+            background-color: wheat;
+            margin: 10px 10px 10px 5px;
+            width: 200px;
+            height: 200px;
+        }
+
+        @media (max-width: 720px) {
+            .info-grupos {
+               flex-direction: column;
+               justify-content: center;
+            }
+         
+            .info-grupos p {
+               align-items: center;
+               max-width: 50%;
+               margin:auto;
+            }
+         
+            .info-grupos img {
+               width: 50%;
+            }
+         }
+        
+    }
+}
+
+//mensajes
+div {
+    a {
+        display: flex;
+        justify-content: flex-end;
+        padding: 1px 43px;
+        margin: 2px;
+    }
+}
+
+div {
+   
+
+    .caja-mensajes {
+        display: flex;
+        flex-direction: row;
+    }
+    @media (max-width:720px) {
+        .caja-mensajes {
+           overflow: scroll;
+        }
+     }
+    
+
+    .videos {
+        margin: 5px;
+    }
+}
+
+//ministerios
+div{
+   
+    .caja-ministerios{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    img{
+        display: flex;
+        width: 100%;
+        height: 350px;
+    }
+    }
+    .fotos-ministerios {
+        img{
+            padding: 5px;
+            margin: auto;
+        }
+    }
+    @media (max-width: 720px) {
+        .caja-ministerios {
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+        }
+     
+        .fotos-ministerios img {
+           width: 100%;
+     
+     
+        }
+     }
+    .info-ministerios {
+        display: flex;
+        p{
+            margin: 20px;
+            text-align: justify;
+            font-family: sans-serif;
+            font-size: 15;
+        }
+    }
+
+}
+
+
+//nosotros
+div{
+    
+    .caja-nosotros{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        img{
+            display: flex;
+            width: 100%;
+            height: 350px;
+        }
+    }
+    .fotos-nosotros{
+        img{
+            padding: 5px; 
+        }
+    }
+    
+
+ @media (max-width: 720px) {
+    .caja-nosotros {
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    }
+ 
+    .fotos-nosotros img {
+       width: 100%;
+ 
+ 
+    }
+ }
+}
+   .informacion-iglesia{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+    padding: 15px;
+   }
+    .form-igl{
+        form{
+            border: solid black;
+            background-color: rgba(241, 241, 241, 0.514);
+            border-radius: 5px;
+            display: block;
+            padding: 10px;
+
+            p{
+                padding: 10px;
+            }
+        }
+        
+
+   
+    }
+    .volver{
+        a{
+            text-decoration: none;
+            color: black;
+
+            &:hover{
+                color: blue;
+            }
+        }
+    }
+    @media (max-width: 720px) {
+        .informacion-iglesia {
+           flex-direction: column;
+        }
+        .form-igl form {
+           margin: 10px;
+        }
+     }
