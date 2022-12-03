@@ -14,7 +14,6 @@ header {
   align-items: center;
   border-bottom: 1px solid black;
   padding: 50px;
-  position: -webkit-sticky;
   position: sticky;
   top: 0%;
 }
